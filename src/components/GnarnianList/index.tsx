@@ -19,6 +19,8 @@ export const GnarnianList = () => {
     setFilterDev(false)
   }
 
+  const navToNew = () => navigate('/new')
+
   return (
     <>
       <h2> A Handy list of Gnarnians....</h2>
@@ -55,6 +57,15 @@ export const GnarnianList = () => {
               </Card.Body>
             </Card>
           ))}
+        <Card style={{ display: 'flex', width: '18rem', margin: '1rem' }}>
+          <Card.Body>
+            <Card.Title>New Gnarnian!</Card.Title>
+            <Card.Text> Who will it be? </Card.Text>
+            <Button variant="outline-primary" active onClick={navToNew}>
+              Add New Gnarnian!
+            </Button>
+          </Card.Body>
+        </Card>
       </Container>
     </>
   )
