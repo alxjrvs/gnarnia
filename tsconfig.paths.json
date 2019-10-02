@@ -1,0 +1,9 @@
+// this file exists to get around Create React App restrictions
+// On Base URL. This allows for typescript autocomplete and
+// absolute imports.
+// AJ - 09/04/19
+{
+  "compilerOptions": {
+    "baseUrl": "."
+  }
+}
